@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bayu</string>
+
+    <!-- splash screen start -->
+    <!-- splash screen end -->
+
+    <!-- login screen start -->
+    <string name="login.username">Username</string>
+    <string name="login.password">Password</string>
+    <string name="login.login">Masuk</string>
+    <string name="home.balance">Saldo</string>
+    <string name="home.balance_amount">0</string>
+    <string name="main.session_expired">Sesi telah habis, Anda akan logout</string>
+    <!-- login screen end -->
+</resources>

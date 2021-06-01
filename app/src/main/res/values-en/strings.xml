@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bayu</string>
+    <string name="login.username">Username</string>
+    <string name="login.password">Password</string>
+    <string name="login.login">Login</string>
+    <string name="home.balance">Balance</string>
+    <string name="home.balance_amount">0</string>
+    <string name="main.session_expired">Session is expired, you will be logged out</string>
+</resources>
