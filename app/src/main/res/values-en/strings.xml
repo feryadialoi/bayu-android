@@ -7,4 +7,14 @@
     <string name="home.balance">Balance</string>
     <string name="home.balance_amount">0</string>
     <string name="main.session_expired">Session is expired, you will be logged out</string>
+    <string name="home.top_up">Top Up</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home.transfer">Transfer</string>
+    <string name="home.history">History</string>
+    <string name="topup.title">Top Up</string>
+    <string name="transfer.title">Transfer</string>
+    <string name="history.title">History</string>
+    <string name="large_text">lorem ipsum dolor sit amet</string>
+    <string name="transfer.new_receiver">New Receiver</string>
+    <string name="transfer.favorite">Favorite</string>
 </resources>
