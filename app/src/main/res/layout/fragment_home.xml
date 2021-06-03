@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,8 +26,34 @@
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:background="?attr/colorPrimary">
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <dev.feryadi.bayu.view.Greeting
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    app:message="Selamat Pagi"
+                    app:messageColor="?attr/colorOnPrimary"
+                    app:messageSize="16sp"
+                    app:name="Feryadi"
+                    app:nameColor="?attr/colorOnPrimary"
+                    app:nameSize="24sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:icon="@drawable/ic_baseline_notifications_24"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconTint="?attr/colorOnPrimary" />
+
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -36,7 +62,10 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/colorPrimary"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:paddingHorizontal="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="76dp">
+
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
@@ -54,6 +83,48 @@
                     android:textStyle="bold" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="-60dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <dev.feryadi.bayu.view.FeaturedIMenu
+                        android:id="@+id/fm_home_top_up"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+                        app:title="@string/home.top_up" />
+
+                    <dev.feryadi.bayu.view.FeaturedIMenu
+                        android:id="@+id/fm_home_transfer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_baseline_arrow_circle_up_24"
+                        app:title="@string/home.transfer" />
+
+                    <dev.feryadi.bayu.view.FeaturedIMenu
+                        android:id="@+id/fm_home_history"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_baseline_update_24"
+                        app:title="@string/home.history" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
