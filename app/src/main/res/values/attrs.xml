@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Greeting">
+        <attr name="message" format="string" />
+        <attr name="name" format="string" />
+        <attr name="messageColor" format="color" />
+        <attr name="nameColor" format="color" />
+        <attr name="messageSize" format="dimension" />
+        <attr name="nameSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FeaturedIMenu">
+        <attr name="title" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="iconTint" format="color" />
+        <attr name="titleTextColor" format="color" />
+    </declare-styleable>
+</resources>
