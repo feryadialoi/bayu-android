@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_splashFragment_to_exampleActivity"
             app:destination="@id/exampleActivity" />
+        <action
+            android:id="@+id/action_splashFragment_to_pinFragment"
+            app:destination="@id/pinFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -40,7 +43,17 @@
         android:id="@+id/homeFragment"
         android:name="dev.feryadi.bayu.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topUpFragment"
+            app:destination="@id/topUpFragment" />
+    </fragment>
     <activity
         android:id="@+id/exampleActivity"
         android:name="dev.feryadi.bayu.ExampleActivity"
@@ -51,4 +64,28 @@
         app:destination="@id/loginFragment"
         app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/pinFragment"
+        android:name="dev.feryadi.bayu.PinFragment"
+        android:label="fragment_pin"
+        tools:layout="@layout/fragment_pin" >
+        <action
+            android:id="@+id/action_pinFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="dev.feryadi.bayu.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/topUpFragment"
+        android:name="dev.feryadi.bayu.TopUpFragment"
+        android:label="fragment_top_up"
+        tools:layout="@layout/fragment_top_up" />
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="dev.feryadi.bayu.TransferFragment"
+        android:label="fragment_transfer"
+        tools:layout="@layout/fragment_transfer" />
 </navigation>
