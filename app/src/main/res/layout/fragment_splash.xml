@@ -7,13 +7,17 @@
     tools:context=".SplashFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary">
 
         <TextView
             android:id="@+id/tv_splash_screen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Splash Screen"
+            android:text="@string/app_name"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
