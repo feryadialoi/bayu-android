@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dev.feryadi.bayu.apiservice.AuthApiService
 import dev.feryadi.bayu.apiservice.UserBalanceApiService
+import dev.feryadi.bayu.apiservice.UserMutationApiService
 import dev.feryadi.bayu.constant.Environment
 import dev.feryadi.bayu.interceptor.UnauthorizedInterceptor
 import okhttp3.OkHttpClient
@@ -58,5 +59,10 @@ object ApiModule {
     @Provides
     fun userBalanceApiService(retrofit: Retrofit): UserBalanceApiService {
         return retrofit.create(UserBalanceApiService::class.java)
+    }
+    @Singleton
+    @Provides
+    fun userMutationApiService(retrofit: Retrofit): UserMutationApiService {
+        return retrofit.create(UserMutationApiService::class.java)
     }
 }
