@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bayu"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ExampleActivity"></activity>
+        <activity android:name=".ExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

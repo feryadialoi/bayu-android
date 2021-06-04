@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 import dev.feryadi.bayu.databinding.FragmentHomeBinding
 import dev.feryadi.bayu.model.network.response.BalanceResponse
@@ -52,6 +54,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun initView() {
+        requireActivity().findViewById<BottomNavigationView>(R.id.bottom_nav_view).visibility = View.VISIBLE
+
         viewBinding.fmHomeTopUp.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToTopUpFragment())
         }

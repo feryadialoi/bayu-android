@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_splashFragment_to_pinFragment"
             app:destination="@id/pinFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -59,11 +62,7 @@
         android:name="dev.feryadi.bayu.ExampleActivity"
         android:label="activity_example"
         tools:layout="@layout/activity_example" />
-    <action
-        android:id="@+id/action_global_loginFragment"
-        app:destination="@id/loginFragment"
-        app:popUpTo="@id/nav_graph"
-        app:popUpToInclusive="true" />
+
     <fragment
         android:id="@+id/pinFragment"
         android:name="dev.feryadi.bayu.PinFragment"
@@ -88,4 +87,61 @@
         android:name="dev.feryadi.bayu.TransferFragment"
         android:label="fragment_transfer"
         tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="dev.feryadi.bayu.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="dev.feryadi.bayu.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"
+        />
+    <action
+        android:id="@+id/action_global_dashboardFragment"
+        app:destination="@id/dashboardFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"
+        />
+    <action
+        android:id="@+id/action_global_notificationsFragment"
+        app:destination="@id/notificationsFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="dev.feryadi.bayu.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <action
+        android:id="@+id/action_global_profileFragment"
+        app:destination="@id/profileFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="dev.feryadi.bayu.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan" />
+    <action
+        android:id="@+id/action_global_scanFragment"
+        app:destination="@id/scanFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+
 </navigation>
